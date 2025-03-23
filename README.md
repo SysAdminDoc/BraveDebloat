@@ -61,7 +61,7 @@ The script downloads and replaces the following Brave profile files:
 - `Web Data`
 - `DIPS`
 
-These files are hosted remotely and will be placed in the `Default` user profile folder to enforce your custom configuration.
+These files are hosted in this repo and will be placed in the `Default` user profile folder to enforce your custom configuration.
 
 ---
 
