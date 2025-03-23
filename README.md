@@ -17,3 +17,17 @@ This script disables several built-in Brave features that may be considered bloa
 2. Creates a temporary `.reg` file with policy settings.
 3. Applies the file to the Windows Registry.
 4. Deletes the temporary file after completion.
+
+## 📥 Usage
+
+Download or copy the `debloat-brave.bat` file from this repository and **run it as Administrator**.
+
+> 🛡️ **Note:** Running as Administrator is required to apply system-wide registry changes.
+
+## 🧠 Why Debloat Brave?
+
+While Brave is a great browser for privacy, some of its built-in features—like Rewards, Wallet, and AI Chat—may be unnecessary or undesired for certain users. This script helps you strip it down to just what you need.
+
+## 📜 License
+
+MIT
