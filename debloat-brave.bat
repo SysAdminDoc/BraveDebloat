@@ -23,7 +23,6 @@ echo "BraveWalletDisabled"=dword:00000001
 echo "BraveVPNDisabled"=dword:00000001
 echo "BraveAIChatEnabled"=dword:00000000
 echo "TorDisabled"=dword:00000001
-echo "NewTabPageLocation"="https://www.google.com"
 ) > "%regfile%"
 
 echo Applying registry tweaks...
