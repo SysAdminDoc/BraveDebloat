@@ -1,6 +1,6 @@
 # 🧹 Brave Debloater Script
 
-A professional-grade batch script that automates the installation and debloating of the Brave browser on Windows. This script applies privacy-focused tweaks, disables unwanted features, and replaces user profile files with preconfigured versions — giving you a clean, minimal Brave experience right out of the box.
+A professional-grade batch script that automates the installation and debloating of the Brave browser on Windows. This script applies privacy-focused tweaks, disables unwanted features, and replaces user profile files with preconfigured versions, giving you a clean, minimal Brave experience right out of the box.
 
 ---
 
@@ -14,7 +14,7 @@ A professional-grade batch script that automates the installation and debloating
    - Brave AI Chat (Leo)
    - Tor integration
 3. **Creates the `Default` profile folder** (if it doesn’t exist).
-4. **Downloads and installs preconfigured profile files** into: %LOCALAPPDATA%\BraveSoftware\Brave-Browser\User Data\Default
+4. **Downloads and installs preconfigured profile files** into: `%LOCALAPPDATA%\BraveSoftware\Brave-Browser\User Data\Default` for theme adjustments.
 
 ---
 
