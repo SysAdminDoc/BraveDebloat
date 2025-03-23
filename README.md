@@ -1,6 +1,6 @@
 # 🧹 Brave Debloater Script
 
-A professional-grade batch script that automates the installation and debloating of the Brave browser on Windows. This script applies privacy-focused tweaks, disables unwanted features, and replaces user profile files with preconfigured versions, giving you a clean, minimal Brave experience right out of the box.
+A batch script that automates the installation and debloating of the Brave browser on Windows. This script applies privacy-focused tweaks, disables unwanted features, and replaces user profile files with preconfigured versions, giving you a clean, minimal Brave experience right out of the box.
 
 ---
 
