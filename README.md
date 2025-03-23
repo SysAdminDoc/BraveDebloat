@@ -1,33 +1,73 @@
-# 🧹 Debloat Brave
+# 🧹 Brave Debloater Script
 
-A simple script to install and debloat the Brave browser using [Group Policy settings](https://support.brave.com/hc/en-us/articles/360039248271-Group-Policy) via the Windows registry.
+A professional-grade batch script that automates the installation and debloating of the Brave browser on Windows. This script applies privacy-focused tweaks, disables unwanted features, and replaces user profile files with preconfigured versions — giving you a clean, minimal Brave experience right out of the box.
 
-## ⚙️ Features
+---
 
-This script disables several built-in Brave features that may be considered bloat or unwanted by privacy-focused users:
+## ⚙️ What This Script Does
 
-- 🪙 Brave Rewards
-- 👛 Brave Wallet
-- 🌐 Brave VPN
-- 🤖 Brave AI Chat
+1. **Installs Brave** using [winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/).
+2. **Applies registry-level group policy tweaks** to disable:
+   - Brave Rewards
+   - Brave Wallet
+   - Brave VPN
+   - Brave AI Chat (Leo)
+   - Tor integration
+3. **Creates the `Default` profile folder** (if it doesn’t exist).
+4. **Downloads and installs preconfigured profile files** into: %LOCALAPPDATA%\BraveSoftware\Brave-Browser\User Data\Default
 
-## 🚀 How It Works
+---
 
-1. Installs Brave using `winget`.
-2. Creates a temporary `.reg` file with policy settings.
-3. Applies the file to the Windows Registry.
-4. Deletes the temporary file after completion.
+## 🛠 Features Disabled
 
-## 📥 Usage
+| Feature       | Status     |
+|---------------|------------|
+| Brave Rewards | ❌ Disabled |
+| Brave Wallet  | ❌ Disabled |
+| Brave VPN     | ❌ Disabled |
+| Brave AI Chat (Leo) | ❌ Disabled |
+| Brave Tor      | ❌ Disabled |
 
-Download or copy the `debloat-brave.bat` file from this repository and **run it as Administrator**.
+---
 
-> 🛡️ **Note:** Running as Administrator is required to apply system-wide registry changes.
+## 📥 How to Use
 
-## 🧠 Why Debloat Brave?
+1. **Download** or clone this repository.
+2. **Run `debloat-brave.bat` as Administrator.**
 
-While Brave is a great browser for privacy, some of its built-in features—like Rewards, Wallet, and AI Chat—may be unnecessary or undesired for certain users. This script helps you strip it down to just what you need.
+This is required for:
+- Installing software with `winget`
+- Applying system-wide registry changes
+- Writing to protected file paths
 
-## 📜 License
+> ⚠️ Brave should be **closed** before running this script to ensure profile files are not locked.
 
-MIT
+---
+
+## 🧾 Dependencies
+
+- Windows 10 or 11
+- [Winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/) (included in modern Windows versions)
+- Internet connection to fetch configuration files
+
+---
+
+## 📁 Custom Profile Files Included
+
+The script downloads and replaces the following Brave profile files:
+
+- `Secure Preferences`
+- `Preferences`
+- `Web Data`
+- `DIPS`
+
+These files are hosted remotely and will be placed in the `Default` user profile folder to enforce your custom configuration.
+
+---
+
+## ❓ Why Debloat Brave?
+
+Brave is a privacy-respecting browser, but it still includes optional features like crypto rewards, wallet integration, AI assistants, and sponsored content. If you want a faster, cleaner, and less distracting experience, this script helps streamline Brave into a lightweight, no-nonsense browser.
+
+---
+
