@@ -1,6 +1,6 @@
 # 🧹 Debloat Brave
 
-A simple script to install and debloat the Brave browser using Group Policy settings via the Windows registry.
+A simple script to install and debloat the Brave browser using [Group Policy settings](https://support.brave.com/hc/en-us/articles/360039248271-Group-Policy) via the Windows registry.
 
 ## ⚙️ Features
 
